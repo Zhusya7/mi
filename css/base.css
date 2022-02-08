@@ -1,0 +1,37 @@
+/* css resert   设置css默认样式，*/
+p,h1,h2,h3,h4,h5,h6,ul,ol,li,dd,dt,dl,input,body{
+    margin: 0;
+    padding: 0;
+}
+img{
+    display: block;
+    /* 兼容ie，去掉ie中img的边框 */
+    border: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearfix{
+    zoom: 1;
+    /* 解决ie：外边距（margin）的重叠，浮动的清除,触发ie的 haslayout属性等等。 */
+}
+.content{
+    width: 1230px;
+    margin: 0 auto;
+}
+
